@@ -82,7 +82,7 @@ def make_closed_keyboard() -> InlineKeyboardMarkup:
     ])
 
 def build_text(original: str | None, username: str) -> str:
-    header = f"🌍 <a href='https://t.me/{username}'>Планета отзывов</a>\n\n<b>НОВОЕ ЗАДАНИЕ</b>\n\n"
+    header = "🌍 Планета отзывов\n\n<b>НОВОЕ ЗАДАНИЕ</b>\n\n"
     return header + (original or "")
 
 def build_closed_text(original: str | None, username: str) -> str:
